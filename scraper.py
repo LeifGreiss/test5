@@ -24,7 +24,7 @@ def scrape_table(root):
             record['ID'] = item
             print record, '------------'
             #Save in the SQLite database, with the ID code to be used as the unique reference
-            scraperwiki.sqlite.save(["ID"], record)
+            data.sqlite.save(["ID"], record)
 
 #this creates a new function and (re)names whatever parameter is passed to it - i.e. 'next_link' below - as 'url'
 def scrape_page(url):
